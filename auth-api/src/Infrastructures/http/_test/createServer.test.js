@@ -209,10 +209,6 @@ describe('HTTP server', () => {
       expect(response.body.message).toEqual('kredensial yang Anda masukkan salah');
     });
 
-      // Assert
-      expect(response.status).toEqual(400);
-      expect(response.body.status).toEqual('fail');
-      expect(response.body.message).toEqual('username tidak tersedia');
     it('should response 400 if login payload not contain needed property', async () => {
       const requestPayload = {
         username: 'dicoding',
