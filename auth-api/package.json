@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node src/app.js",
     "start:dev": "nodemon src/app.js",
-    "test": "vitest --run",
+    "test": "vitest --run --coverage",
     "test:watch": "vitest --watch",
     "migrate": "node-pg-migrate",
     "migrate:test": "node-pg-migrate --envPath .test.env",
