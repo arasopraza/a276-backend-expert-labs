@@ -197,14 +197,11 @@ describe('HTTP server', () => {
           fullname: 'Dicoding Indonesia',
         });
 
+      // Action
       const response = await request(app)
         .post('/authentications')
         .send(requestPayload);
 
-      // Action
-      const response = await request(app)
-          .post('/users')
-          .send(requestPayload);
 
       // Assert
       expect(response.status).toEqual(401);
